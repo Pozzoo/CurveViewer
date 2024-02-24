@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Curve Viewer</title>
+    </head>
+    <body style="margin: 0px;">
+        <div id="buttons">
+            <button type="button" onclick="clearAll()">Clear</button>
+            <button type="button" onclick="draw(0)">Auto Catmull</button>
+            <button type="button" onclick="draw(1)">Catmull</button>
+            <button type="button" onclick="draw(2)">Smoothstep</button>
+            <div id="densitySelector">
+                <label for="density">Curve Density:</label>
+                <input type="range" min="5" max="500" value="100" class="slider" id="density">
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+    </body>
+<script src="script.js"></script>
+</html>

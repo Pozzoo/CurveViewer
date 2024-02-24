@@ -1,0 +1,9 @@
+#densitySelector {
+    display: flex;
+    vertical-align: middle;
+}
+
+#canvas {
+    border-style: solid;
+    border: 1px, black;
+}
