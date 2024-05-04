@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Curve Viewer</title>
+    </head>
+    <body style="margin: 0px;">
+        <div id="buttons">
+            <button type="button" id="clearButton">Clear</button>
+            <button type="button" id="autoCatmullButton">Auto Catmull</button>
+            <button type="button" id="catmullButton">Catmull</button>
+            <button type="button" id="lagrangeButton">Lagrange</button>
+
+            <span> | </span>
+
+            <label for="xCoordinate">X:</label>
+            <input type="number" id="xCoordinate" value="0" min="-945" max="945"> 
+
+            <label for="yCoordinate">Y:</label>
+            <input type="number" id="yCoordinate" value="0" min="-445" max="445">
+
+            <button type="button" id="addPointButton">Add Point</button>
+
+            <button type="button" id="exportButton" style="float: right;">Export function</button>
+            <div id="selectors">
+                <label for="density">Curve Density:</label>
+                <input type="range" min="5" max="500" value="100" class="slider" id="density">
+
+                <p>|</p>
+                <input type="checkbox" id="cartesianToggle">
+                <label for="cartesianToggle">Toggle Cartesian plane</label>
+
+                <p>|</p>
+                <input type="checkbox" id="gridToggle">
+                <label for="gridToggle">Toggle Grid</label>
+
+                <p>|</p>
+                <input type="checkbox" id="functionToggle">
+                <label for="functionToggle">Function mode (clears screen)</label> 
+
+                <p>| >>click to add a point, click and drag to change its position | >>Drag and drop an exported curve to import</p>
+            </div>
+        </div>
+        <canvas id="tipCanvas"></canvas>
+        <canvas id="canvas"></canvas>
+    </body>
+    <script type="module" src="./dist/script.js"></script>
+</html>

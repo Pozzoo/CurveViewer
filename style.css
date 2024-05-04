@@ -1,0 +1,25 @@
+#selectors {
+    display: flex;
+    vertical-align: middle;
+}
+
+#canvas {
+    border-style: solid;
+    border: 1px, black;
+}
+
+#tipCanvas {
+    position: absolute;
+    left: -200px;
+    top: 100px;
+    border:1px solid blue;
+}
+
+p {
+    margin: 0 5px;
+}
+
+#xCoordinates, #yCoordinates {
+    max-width: 100px;
+    max-height: 35px;
+}
