@@ -231,7 +231,7 @@ window.ondrop = function (event) {
     event.preventDefault();
 };
 function warmupCanvas(tipCanvas, canvas) {
-    tipCanvas.width = 50;
+    tipCanvas.width = 75;
     tipCanvas.height = 25;
     canvas.width = canvasDimentions.width;
     canvas.height = canvasDimentions.height;

@@ -296,7 +296,7 @@ window.ondrop = function(event) {
 }
 
 function warmupCanvas(tipCanvas: HTMLCanvasElement , canvas: HTMLCanvasElement) {
-    tipCanvas.width = 50;
+    tipCanvas.width = 75;
     tipCanvas.height = 25;
 
     canvas.width = canvasDimentions.width;

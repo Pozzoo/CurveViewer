@@ -1,4 +1,4 @@
-import { Point2D } from "./interfaces";
+import { Point2D } from "./interfaces.js";
 
 export function lagrangeInterpolation(density:number, points:Point2D[], context:CanvasRenderingContext2D) {
     if (points.length <= 1) return;
